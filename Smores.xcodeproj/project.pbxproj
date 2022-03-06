@@ -16,6 +16,21 @@
 		1A5A27DC27D5129F00BE32AD /* SmoresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5A27DB27D5129F00BE32AD /* SmoresTests.swift */; };
 		1A5A27E627D5129F00BE32AD /* SmoresUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5A27E527D5129F00BE32AD /* SmoresUITests.swift */; };
 		1A5A27E827D5129F00BE32AD /* SmoresUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5A27E727D5129F00BE32AD /* SmoresUITestsLaunchTests.swift */; };
+		1A5A27F527D5139B00BE32AD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5A27F427D5139B00BE32AD /* NetworkManager.swift */; };
+		1A5A27F727D513B700BE32AD /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5A27F627D513B700BE32AD /* ChatViewController.swift */; };
+		1A5A280A27D514C300BE32AD /* Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5A280927D514C300BE32AD /* Padding.swift */; };
+		1A5A280C27D514C700BE32AD /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5A280B27D514C700BE32AD /* Size.swift */; };
+		1A5A280E27D514D000BE32AD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5A280D27D514D000BE32AD /* Colors.swift */; };
+		1A5A281127D5150200BE32AD /* ErrorMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5A281027D5150200BE32AD /* ErrorMessages.swift */; };
+		1A5A281427D5151900BE32AD /* ImageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5A281327D5151900BE32AD /* ImageResponse.swift */; };
+		1A5A281627D5153D00BE32AD /* ThumbnailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5A281527D5153D00BE32AD /* ThumbnailCollectionViewCell.swift */; };
+		1A5A281827D5155F00BE32AD /* ImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5A281727D5155F00BE32AD /* ImagePickerController.swift */; };
+		1A5A281A27D5157A00BE32AD /* KeyboardInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5A281927D5157A00BE32AD /* KeyboardInputAccessoryView.swift */; };
+		1A5A281C27D515BA00BE32AD /* KeyboardInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A5A281B27D515BA00BE32AD /* KeyboardInputAccessoryView.xib */; };
+		1A5A281E27D5163F00BE32AD /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5A281D27D5163F00BE32AD /* UIView+Ext.swift */; };
+		38C5F5C9CB0788BA883B2B8D /* Pods_Smores_SmoresUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B168BFF5C55314D280F85FF2 /* Pods_Smores_SmoresUITests.framework */; };
+		BF88290EF309466019078C90 /* Pods_Smores.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1782D0AE73BA776D07CC902 /* Pods_Smores.framework */; };
+		F23EABE828033E6097DD6D23 /* Pods_SmoresTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A68453F0856C72B591AC13F5 /* Pods_SmoresTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +64,27 @@
 		1A5A27E127D5129F00BE32AD /* SmoresUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmoresUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A5A27E527D5129F00BE32AD /* SmoresUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoresUITests.swift; sourceTree = "<group>"; };
 		1A5A27E727D5129F00BE32AD /* SmoresUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoresUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1A5A27F427D5139B00BE32AD /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		1A5A27F627D513B700BE32AD /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		1A5A280927D514C300BE32AD /* Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Padding.swift; sourceTree = "<group>"; };
+		1A5A280B27D514C700BE32AD /* Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
+		1A5A280D27D514D000BE32AD /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		1A5A281027D5150200BE32AD /* ErrorMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessages.swift; sourceTree = "<group>"; };
+		1A5A281327D5151900BE32AD /* ImageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResponse.swift; sourceTree = "<group>"; };
+		1A5A281527D5153D00BE32AD /* ThumbnailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailCollectionViewCell.swift; sourceTree = "<group>"; };
+		1A5A281727D5155F00BE32AD /* ImagePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerController.swift; sourceTree = "<group>"; };
+		1A5A281927D5157A00BE32AD /* KeyboardInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardInputAccessoryView.swift; sourceTree = "<group>"; };
+		1A5A281B27D515BA00BE32AD /* KeyboardInputAccessoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyboardInputAccessoryView.xib; sourceTree = "<group>"; };
+		1A5A281D27D5163F00BE32AD /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		53071C34011B4772077E28FE /* Pods-SmoresTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoresTests.debug.xcconfig"; path = "Target Support Files/Pods-SmoresTests/Pods-SmoresTests.debug.xcconfig"; sourceTree = "<group>"; };
+		57C790CC3BBA5194A23F0BFD /* Pods-SmoresTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoresTests.release.xcconfig"; path = "Target Support Files/Pods-SmoresTests/Pods-SmoresTests.release.xcconfig"; sourceTree = "<group>"; };
+		A1782D0AE73BA776D07CC902 /* Pods_Smores.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smores.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A68453F0856C72B591AC13F5 /* Pods_SmoresTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmoresTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B168BFF5C55314D280F85FF2 /* Pods_Smores_SmoresUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smores_SmoresUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5E6A7665BC044317FF01586 /* Pods-Smores.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smores.debug.xcconfig"; path = "Target Support Files/Pods-Smores/Pods-Smores.debug.xcconfig"; sourceTree = "<group>"; };
+		BD0B719E410423CAA6ADD0F0 /* Pods-Smores.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smores.release.xcconfig"; path = "Target Support Files/Pods-Smores/Pods-Smores.release.xcconfig"; sourceTree = "<group>"; };
+		D5C5B555813AEF0EE5DE83BF /* Pods-Smores-SmoresUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smores-SmoresUITests.debug.xcconfig"; path = "Target Support Files/Pods-Smores-SmoresUITests/Pods-Smores-SmoresUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EFCDCBEC1FB9E54BF6046031 /* Pods-Smores-SmoresUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smores-SmoresUITests.release.xcconfig"; path = "Target Support Files/Pods-Smores-SmoresUITests/Pods-Smores-SmoresUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF88290EF309466019078C90 /* Pods_Smores.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F23EABE828033E6097DD6D23 /* Pods_SmoresTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38C5F5C9CB0788BA883B2B8D /* Pods_Smores_SmoresUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +122,8 @@
 				1A5A27DA27D5129F00BE32AD /* SmoresTests */,
 				1A5A27E427D5129F00BE32AD /* SmoresUITests */,
 				1A5A27C227D5129D00BE32AD /* Products */,
+				7946861B9BD19231224ABF21 /* Pods */,
+				D8FFCAC323F6A432F127DF24 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +140,23 @@
 		1A5A27C327D5129D00BE32AD /* Smores */ = {
 			isa = PBXGroup;
 			children = (
+				1A5A281227D5150D00BE32AD /* Model */,
+				1A5A280F27D514F900BE32AD /* Utils */,
+				1A5A280827D514AF00BE32AD /* Constants */,
 				1A5A27C427D5129D00BE32AD /* AppDelegate.swift */,
 				1A5A27C627D5129D00BE32AD /* SceneDelegate.swift */,
 				1A5A27C827D5129D00BE32AD /* ViewController.swift */,
+				1A5A27F627D513B700BE32AD /* ChatViewController.swift */,
 				1A5A27CA27D5129D00BE32AD /* Main.storyboard */,
 				1A5A27CD27D5129E00BE32AD /* Assets.xcassets */,
 				1A5A27CF27D5129E00BE32AD /* LaunchScreen.storyboard */,
 				1A5A27D227D5129E00BE32AD /* Info.plist */,
+				1A5A27F427D5139B00BE32AD /* NetworkManager.swift */,
+				1A5A281527D5153D00BE32AD /* ThumbnailCollectionViewCell.swift */,
+				1A5A281727D5155F00BE32AD /* ImagePickerController.swift */,
+				1A5A281927D5157A00BE32AD /* KeyboardInputAccessoryView.swift */,
+				1A5A281D27D5163F00BE32AD /* UIView+Ext.swift */,
+				1A5A281B27D515BA00BE32AD /* KeyboardInputAccessoryView.xib */,
 			);
 			path = Smores;
 			sourceTree = "<group>";
@@ -127,6 +178,55 @@
 			path = SmoresUITests;
 			sourceTree = "<group>";
 		};
+		1A5A280827D514AF00BE32AD /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				1A5A280927D514C300BE32AD /* Padding.swift */,
+				1A5A280B27D514C700BE32AD /* Size.swift */,
+				1A5A280D27D514D000BE32AD /* Colors.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		1A5A280F27D514F900BE32AD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1A5A281027D5150200BE32AD /* ErrorMessages.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1A5A281227D5150D00BE32AD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1A5A281327D5151900BE32AD /* ImageResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7946861B9BD19231224ABF21 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5E6A7665BC044317FF01586 /* Pods-Smores.debug.xcconfig */,
+				BD0B719E410423CAA6ADD0F0 /* Pods-Smores.release.xcconfig */,
+				D5C5B555813AEF0EE5DE83BF /* Pods-Smores-SmoresUITests.debug.xcconfig */,
+				EFCDCBEC1FB9E54BF6046031 /* Pods-Smores-SmoresUITests.release.xcconfig */,
+				53071C34011B4772077E28FE /* Pods-SmoresTests.debug.xcconfig */,
+				57C790CC3BBA5194A23F0BFD /* Pods-SmoresTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D8FFCAC323F6A432F127DF24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1782D0AE73BA776D07CC902 /* Pods_Smores.framework */,
+				B168BFF5C55314D280F85FF2 /* Pods_Smores_SmoresUITests.framework */,
+				A68453F0856C72B591AC13F5 /* Pods_SmoresTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +234,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A5A27EB27D5129F00BE32AD /* Build configuration list for PBXNativeTarget "Smores" */;
 			buildPhases = (
+				125FBD2E036823FA31DAE142 /* [CP] Check Pods Manifest.lock */,
 				1A5A27BD27D5129D00BE32AD /* Sources */,
 				1A5A27BE27D5129D00BE32AD /* Frameworks */,
 				1A5A27BF27D5129D00BE32AD /* Resources */,
+				EF34B572CEA126CEDDFC9C12 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +253,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A5A27EE27D5129F00BE32AD /* Build configuration list for PBXNativeTarget "SmoresTests" */;
 			buildPhases = (
+				8ADB43F2EC8D1BEB921AF16F /* [CP] Check Pods Manifest.lock */,
 				1A5A27D327D5129F00BE32AD /* Sources */,
 				1A5A27D427D5129F00BE32AD /* Frameworks */,
 				1A5A27D527D5129F00BE32AD /* Resources */,
@@ -169,9 +272,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A5A27F127D5129F00BE32AD /* Build configuration list for PBXNativeTarget "SmoresUITests" */;
 			buildPhases = (
+				8050B06E59E9DD5D42D098ED /* [CP] Check Pods Manifest.lock */,
 				1A5A27DD27D5129F00BE32AD /* Sources */,
 				1A5A27DE27D5129F00BE32AD /* Frameworks */,
 				1A5A27DF27D5129F00BE32AD /* Resources */,
+				708B38D84095F666D200CBA7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,6 +339,7 @@
 				1A5A27D127D5129E00BE32AD /* LaunchScreen.storyboard in Resources */,
 				1A5A27CE27D5129E00BE32AD /* Assets.xcassets in Resources */,
 				1A5A27CC27D5129D00BE32AD /* Main.storyboard in Resources */,
+				1A5A281C27D515BA00BE32AD /* KeyboardInputAccessoryView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +359,128 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		125FBD2E036823FA31DAE142 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Smores-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		708B38D84095F666D200CBA7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Smores-SmoresUITests/Pods-Smores-SmoresUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Smores-SmoresUITests/Pods-Smores-SmoresUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Smores-SmoresUITests/Pods-Smores-SmoresUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8050B06E59E9DD5D42D098ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Smores-SmoresUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8ADB43F2EC8D1BEB921AF16F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmoresTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF34B572CEA126CEDDFC9C12 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Smores/Pods-Smores-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Smores/Pods-Smores-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Smores/Pods-Smores-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1A5A27BD27D5129D00BE32AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A5A27F527D5139B00BE32AD /* NetworkManager.swift in Sources */,
+				1A5A280C27D514C700BE32AD /* Size.swift in Sources */,
+				1A5A281427D5151900BE32AD /* ImageResponse.swift in Sources */,
 				1A5A27C927D5129D00BE32AD /* ViewController.swift in Sources */,
+				1A5A281E27D5163F00BE32AD /* UIView+Ext.swift in Sources */,
 				1A5A27C527D5129D00BE32AD /* AppDelegate.swift in Sources */,
+				1A5A27F727D513B700BE32AD /* ChatViewController.swift in Sources */,
+				1A5A281627D5153D00BE32AD /* ThumbnailCollectionViewCell.swift in Sources */,
+				1A5A281827D5155F00BE32AD /* ImagePickerController.swift in Sources */,
+				1A5A281127D5150200BE32AD /* ErrorMessages.swift in Sources */,
+				1A5A280E27D514D000BE32AD /* Colors.swift in Sources */,
 				1A5A27C727D5129D00BE32AD /* SceneDelegate.swift in Sources */,
+				1A5A281A27D5157A00BE32AD /* KeyboardInputAccessoryView.swift in Sources */,
+				1A5A280A27D514C300BE32AD /* Padding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +654,7 @@
 		};
 		1A5A27EC27D5129F00BE32AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5E6A7665BC044317FF01586 /* Pods-Smores.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -442,9 +663,11 @@
 				DEVELOPMENT_TEAM = MA6LFU3W46;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Smores/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Smore needs to use camera to upload picture";
+				INFOPLIST_KEY_NSMainNibFile = Main;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Smore needs to access photolibrary";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -456,12 +679,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		1A5A27ED27D5129F00BE32AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD0B719E410423CAA6ADD0F0 /* Pods-Smores.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -470,9 +694,11 @@
 				DEVELOPMENT_TEAM = MA6LFU3W46;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Smores/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Smore needs to use camera to upload picture";
+				INFOPLIST_KEY_NSMainNibFile = Main;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Smore needs to access photolibrary";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -484,12 +710,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		1A5A27EF27D5129F00BE32AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53071C34011B4772077E28FE /* Pods-SmoresTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +737,7 @@
 		};
 		1A5A27F027D5129F00BE32AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57C790CC3BBA5194A23F0BFD /* Pods-SmoresTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -530,6 +758,7 @@
 		};
 		1A5A27F227D5129F00BE32AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5C5B555813AEF0EE5DE83BF /* Pods-Smores-SmoresUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -548,6 +777,7 @@
 		};
 		1A5A27F327D5129F00BE32AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFCDCBEC1FB9E54BF6046031 /* Pods-Smores-SmoresUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
