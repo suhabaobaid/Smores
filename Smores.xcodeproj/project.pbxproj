@@ -143,20 +143,15 @@
 				1A5A281227D5150D00BE32AD /* Model */,
 				1A5A280F27D514F900BE32AD /* Utils */,
 				1A5A280827D514AF00BE32AD /* Constants */,
-				1A5A27C427D5129D00BE32AD /* AppDelegate.swift */,
-				1A5A27C627D5129D00BE32AD /* SceneDelegate.swift */,
-				1A5A27C827D5129D00BE32AD /* ViewController.swift */,
-				1A5A27F627D513B700BE32AD /* ChatViewController.swift */,
+				1A5A281F27D5181300BE32AD /* AppDelegate */,
+				1A5A282027D5182000BE32AD /* ViewControllers */,
 				1A5A27CA27D5129D00BE32AD /* Main.storyboard */,
 				1A5A27CD27D5129E00BE32AD /* Assets.xcassets */,
 				1A5A27CF27D5129E00BE32AD /* LaunchScreen.storyboard */,
 				1A5A27D227D5129E00BE32AD /* Info.plist */,
-				1A5A27F427D5139B00BE32AD /* NetworkManager.swift */,
-				1A5A281527D5153D00BE32AD /* ThumbnailCollectionViewCell.swift */,
-				1A5A281727D5155F00BE32AD /* ImagePickerController.swift */,
-				1A5A281927D5157A00BE32AD /* KeyboardInputAccessoryView.swift */,
-				1A5A281D27D5163F00BE32AD /* UIView+Ext.swift */,
-				1A5A281B27D515BA00BE32AD /* KeyboardInputAccessoryView.xib */,
+				1A5A282127D5183000BE32AD /* Managers */,
+				1A5A282227D5183A00BE32AD /* CustomViews */,
+				1A5A282327D5184500BE32AD /* Extensions */,
 			);
 			path = Smores;
 			sourceTree = "<group>";
@@ -202,6 +197,51 @@
 				1A5A281327D5151900BE32AD /* ImageResponse.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1A5A281F27D5181300BE32AD /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				1A5A27C427D5129D00BE32AD /* AppDelegate.swift */,
+				1A5A27C627D5129D00BE32AD /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		1A5A282027D5182000BE32AD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1A5A27C827D5129D00BE32AD /* ViewController.swift */,
+				1A5A27F627D513B700BE32AD /* ChatViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1A5A282127D5183000BE32AD /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				1A5A27F427D5139B00BE32AD /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		1A5A282227D5183A00BE32AD /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				1A5A281B27D515BA00BE32AD /* KeyboardInputAccessoryView.xib */,
+				1A5A281527D5153D00BE32AD /* ThumbnailCollectionViewCell.swift */,
+				1A5A281727D5155F00BE32AD /* ImagePickerController.swift */,
+				1A5A281927D5157A00BE32AD /* KeyboardInputAccessoryView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		1A5A282327D5184500BE32AD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1A5A281D27D5163F00BE32AD /* UIView+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		7946861B9BD19231224ABF21 /* Pods */ = {

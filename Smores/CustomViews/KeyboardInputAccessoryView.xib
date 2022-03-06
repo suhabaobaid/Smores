@@ -60,7 +60,7 @@
                                 <action selector="send:" destination="nOe-ZN-r3b" eventType="touchUpInside" id="MBf-yG-6AR"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sM-YN-ueV">
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sM-YN-ueV" userLabel="ImageButton">
                             <rect key="frame" x="354" y="89" width="32" height="32"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="32" id="5zt-yg-aaB"/>
@@ -80,7 +80,7 @@
                                 <action selector="addImageTapped:" destination="nOe-ZN-r3b" eventType="touchUpInside" id="4je-bs-lKh"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yob-Xq-oSR">
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yob-Xq-oSR" userLabel="LightningButton">
                             <rect key="frame" x="380" y="121" width="32" height="32"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="32" id="XDO-CN-OwF"/>
@@ -96,9 +96,6 @@
                                 <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="17"/>
                                 <color key="baseBackgroundColor" red="0.96862745100000003" green="0.38431372549999998" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </buttonConfiguration>
-                            <connections>
-                                <action selector="addImageTapped:" destination="nOe-ZN-r3b" eventType="touchUpInside" id="Dum-V9-VqW"/>
-                            </connections>
                         </button>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="vHQ-YU-q6a">
                             <rect key="frame" x="20" y="231" width="344" height="2"/>
