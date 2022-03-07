@@ -145,7 +145,9 @@ class KeyboardInputAccessoryView: UIView {
         self.lightningButton.isSelected = true
         self.imagesButton.isHidden = true
         
-        configureCollectionView()
+        if view.subviews.isEmpty {
+            configureCollectionView()
+        }
     }
     
     func configureCollectionView() {
@@ -294,5 +296,10 @@ extension KeyboardInputAccessoryView: UICollectionViewDelegate, UICollectionView
         return CGSize(width: referenceWidth, height: referenceHeight)
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        inputTextView.text = questions[indexPath.row]
+        placeholderLabel.isHidden = true
+        showLightningView = false
+    }
     
 }
