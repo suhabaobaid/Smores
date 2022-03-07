@@ -28,6 +28,7 @@
 		1A5A281A27D5157A00BE32AD /* KeyboardInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5A281927D5157A00BE32AD /* KeyboardInputAccessoryView.swift */; };
 		1A5A281C27D515BA00BE32AD /* KeyboardInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A5A281B27D515BA00BE32AD /* KeyboardInputAccessoryView.xib */; };
 		1A5A281E27D5163F00BE32AD /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5A281D27D5163F00BE32AD /* UIView+Ext.swift */; };
+		1A6A843F27D6A76B006A7CA8 /* LightningCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A843E27D6A76B006A7CA8 /* LightningCollectionViewCell.swift */; };
 		38C5F5C9CB0788BA883B2B8D /* Pods_Smores_SmoresUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B168BFF5C55314D280F85FF2 /* Pods_Smores_SmoresUITests.framework */; };
 		BF88290EF309466019078C90 /* Pods_Smores.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1782D0AE73BA776D07CC902 /* Pods_Smores.framework */; };
 		F23EABE828033E6097DD6D23 /* Pods_SmoresTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A68453F0856C72B591AC13F5 /* Pods_SmoresTests.framework */; };
@@ -76,6 +77,7 @@
 		1A5A281927D5157A00BE32AD /* KeyboardInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardInputAccessoryView.swift; sourceTree = "<group>"; };
 		1A5A281B27D515BA00BE32AD /* KeyboardInputAccessoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyboardInputAccessoryView.xib; sourceTree = "<group>"; };
 		1A5A281D27D5163F00BE32AD /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		1A6A843E27D6A76B006A7CA8 /* LightningCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningCollectionViewCell.swift; sourceTree = "<group>"; };
 		53071C34011B4772077E28FE /* Pods-SmoresTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoresTests.debug.xcconfig"; path = "Target Support Files/Pods-SmoresTests/Pods-SmoresTests.debug.xcconfig"; sourceTree = "<group>"; };
 		57C790CC3BBA5194A23F0BFD /* Pods-SmoresTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoresTests.release.xcconfig"; path = "Target Support Files/Pods-SmoresTests/Pods-SmoresTests.release.xcconfig"; sourceTree = "<group>"; };
 		A1782D0AE73BA776D07CC902 /* Pods_Smores.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smores.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -232,6 +234,7 @@
 				1A5A281527D5153D00BE32AD /* ThumbnailCollectionViewCell.swift */,
 				1A5A281727D5155F00BE32AD /* ImagePickerController.swift */,
 				1A5A281927D5157A00BE32AD /* KeyboardInputAccessoryView.swift */,
+				1A6A843E27D6A76B006A7CA8 /* LightningCollectionViewCell.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -513,6 +516,7 @@
 				1A5A27C927D5129D00BE32AD /* ViewController.swift in Sources */,
 				1A5A281E27D5163F00BE32AD /* UIView+Ext.swift in Sources */,
 				1A5A27C527D5129D00BE32AD /* AppDelegate.swift in Sources */,
+				1A6A843F27D6A76B006A7CA8 /* LightningCollectionViewCell.swift in Sources */,
 				1A5A27F727D513B700BE32AD /* ChatViewController.swift in Sources */,
 				1A5A281627D5153D00BE32AD /* ThumbnailCollectionViewCell.swift in Sources */,
 				1A5A281827D5155F00BE32AD /* ImagePickerController.swift in Sources */,

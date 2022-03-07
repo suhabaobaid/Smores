@@ -30,7 +30,11 @@ class KeyboardInputAccessoryView: UIView {
     @IBOutlet weak var inputHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var collectionViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var imagesCollectionView: UICollectionView!
-    @IBOutlet weak var LightningCollectionViewHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var imagesButton: UIButton!
+    @IBOutlet weak var lightningButton: UIButton!
+    var lightningCollectionView: UICollectionView!
+    
+    let view = UIView()
     
     private weak var delegate: KeyboardInputAccessoryViewProtocol?
     private weak var hostViewController: KeyboardInputAccessoryViewProtocol?
@@ -48,9 +52,16 @@ class KeyboardInputAccessoryView: UIView {
     }
     var showLightningView = false {
         didSet {
-//            LightningCollectionView.reloadData()
+            configureLightningView()
         }
     }
+    var questions: [String] = [
+        "What's your COVID silver lining?",
+        "Favorite sports team?",
+        "Dream celebrity date? (dead or alive)",
+        "Favorite show on Netflix?"
+        
+    ]
     
     class func view(controller: KeyboardInputAccessoryViewProtocol) -> KeyboardInputAccessoryView {
         guard let view = Bundle.main.loadNibNamed(String(describing: KeyboardInputAccessoryView.self), owner: nil, options: nil)?.first as? KeyboardInputAccessoryView else { fatalError() }
@@ -75,7 +86,6 @@ class KeyboardInputAccessoryView: UIView {
                                 textView: inputTextView)
         self.inputHeightConstraint.constant = size.height
         self.collectionViewHeightConstraint.constant = self.didSelectImages ? 80 : 0
-//        self.LightningCollectionViewHeightConstraint.constant = self.showLightningView ? 120 : 0
         return CGSize(width: size.width, height: size.height + 50 + (self.didSelectImages ? 80 : 0))
     }
     
@@ -84,14 +94,81 @@ class KeyboardInputAccessoryView: UIView {
     }
     
     class private func setupUI(view: KeyboardInputAccessoryView) {
+        configureInputView(view: view)
+        configureImagesCollectionView(view: view)
+        configureButtons(view: view)
+    }
+    
+    class func configureInputView(view: KeyboardInputAccessoryView) {
         view.inputTextView.font = UIFont.systemFont(ofSize: 12)
         view.inputTextView.isScrollEnabled = false
         view.placeholderLabel.numberOfLines = 2
         view.placeholderLabel.text = "Need an icebreaker? Tap on the lightning bolt"
         view.placeholderLabel.font = UIFont.systemFont(ofSize: 12)
         view.inputTextView.textContainerInset = InputContainerViewConstants.containerInsetsDefault
+    }
+    
+    class func configureImagesCollectionView(view: KeyboardInputAccessoryView) {
         view.imagesCollectionView.register(ThumbnailCollectionViewCell.self, forCellWithReuseIdentifier: ThumbnailCollectionViewCell.identifier)
         view.imagesCollectionView.backgroundColor = .clear
+    }
+    
+    class func configureButtons(view: KeyboardInputAccessoryView) {
+        view.lightningButton.setImage(UIImage(systemName: "xmark"), for: .selected)
+        view.lightningButton.setImage(UIImage(systemName: "bolt"), for: .normal)
+    }
+    
+    func configureLightningView() {
+        if showLightningView {
+            configureShowLightningView()
+        } else {
+            view.removeFromSuperview()
+            self.lightningButton.isSelected = false
+            self.imagesButton.isHidden = false
+        }
+    }
+    
+    func configureShowLightningView() {
+        view.backgroundColor = .white
+        view.clipsToBounds = true
+        view.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(view)
+        
+        NSLayoutConstraint.activate([
+            view.bottomAnchor.constraint(equalTo: imagesCollectionView.bottomAnchor),
+            
+            view.leadingAnchor.constraint(equalTo: inputTextView.leadingAnchor),
+            view.trailingAnchor.constraint(equalTo: inputTextView.trailingAnchor),
+            view.topAnchor.constraint(equalTo: topAnchor),
+            
+        ])
+        self.lightningButton.isSelected = true
+        self.imagesButton.isHidden = true
+        
+        configureCollectionView()
+    }
+    
+    func configureCollectionView() {
+        let flowLayout = UICollectionViewFlowLayout()
+        flowLayout.scrollDirection = .vertical
+        flowLayout.sectionInset = UIEdgeInsets(top: 10, left: 15, bottom: 10, right: 15)
+        flowLayout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
+        
+        lightningCollectionView = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
+        lightningCollectionView.translatesAutoresizingMaskIntoConstraints = false
+        lightningCollectionView.backgroundColor = .clear
+        lightningCollectionView.showsVerticalScrollIndicator = false
+        lightningCollectionView.delegate = self
+        lightningCollectionView.dataSource = self
+        lightningCollectionView.register(LightningCollectionViewCell.self, forCellWithReuseIdentifier: LightningCollectionViewCell.identifier)
+        view.addSubview(lightningCollectionView)
+        
+        NSLayoutConstraint.activate([
+            lightningCollectionView.topAnchor.constraint(equalTo: view.topAnchor),
+            lightningCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            lightningCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            lightningCollectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+        ])
     }
     
     override func layoutSubviews() {
@@ -103,6 +180,7 @@ class KeyboardInputAccessoryView: UIView {
             self.inputTextView.cornerRadius(usingCorners: [.topLeft, .topRight, .bottomLeft], cornerRadii: CGSize(width: 26, height: 26))
         }
         
+        self.view.cornerRadius(usingCorners: [.topLeft, .topRight, .bottomLeft], cornerRadii: CGSize(width: 26, height: 26))
         self.sendButton.cornerRadius(usingCorners: [.topLeft, .topRight, .bottomRight], cornerRadii: CGSize(width: 26, height: 26))
     }
     
@@ -117,8 +195,7 @@ class KeyboardInputAccessoryView: UIView {
     }
     
     @IBAction func lightningButtonTapped(_ sender: UIButton) {
-        print("Lightning")
-        self.showLightningView = true
+        self.showLightningView = !self.showLightningView
     }
     
     // MARK: - Public functions
@@ -192,4 +269,30 @@ extension KeyboardInputAccessoryView: UITextViewDelegate {
         
         placeholderLabel.isHidden = !textView.text.isEmpty
     }
+}
+
+extension KeyboardInputAccessoryView: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return questions.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: LightningCollectionViewCell.identifier, for: indexPath) as! LightningCollectionViewCell
+        cell.set(with: questions[indexPath.row])
+        return cell
+    }
+    
+    // MARK: - UICollectionViewDelegateFlowLayout -
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let sectionInset = (collectionViewLayout as! UICollectionViewFlowLayout).sectionInset
+        let referenceHeight: CGFloat = 100 // Approximate height of your cell
+        let referenceWidth = collectionView.safeAreaLayoutGuide.layoutFrame.width
+        - sectionInset.left
+        - sectionInset.right
+        - collectionView.contentInset.left
+        - collectionView.contentInset.right
+        return CGSize(width: referenceWidth, height: referenceHeight)
+    }
+    
+    
 }

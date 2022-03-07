@@ -113,6 +113,7 @@
                             </collectionViewFlowLayout>
                         </collectionView>
                     </subviews>
+                    <color key="backgroundColor" red="0.42352941179999998" green="0.74509803919999995" blue="0.4549019608" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstItem="uEa-OT-Q1l" firstAttribute="trailing" secondItem="vHQ-YU-q6a" secondAttribute="trailing" id="0O6-gw-Cst"/>
                         <constraint firstAttribute="bottom" secondItem="vHQ-YU-q6a" secondAttribute="bottom" constant="8" id="Fg5-C8-oJR"/>
@@ -146,9 +147,11 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="collectionViewHeightConstraint" destination="jyQ-N6-OJs" id="TLF-WL-Tm6"/>
+                <outlet property="imagesButton" destination="5sM-YN-ueV" id="9FC-Un-U41"/>
                 <outlet property="imagesCollectionView" destination="vHQ-YU-q6a" id="eDO-2f-Rc2"/>
                 <outlet property="inputHeightConstraint" destination="qq7-CI-KUJ" id="kKz-B9-sU3"/>
                 <outlet property="inputTextView" destination="uEa-OT-Q1l" id="ybK-Nh-nkh"/>
+                <outlet property="lightningButton" destination="yob-Xq-oSR" id="gem-rs-bT2"/>
                 <outlet property="placeholderLabel" destination="wWU-ry-Ix1" id="gfV-1L-E0P"/>
                 <outlet property="sendButton" destination="GhB-E7-y0w" id="DC0-OV-QaS"/>
             </connections>
