@@ -115,7 +115,6 @@ class ViewController: UIViewController, KeyboardInputAccessoryViewProtocol {
     }
     
     func openImagePicker() {
-        self.keyboardView.dismissKeyboard()
         imagePicker.present(from: self.view)
     }
     

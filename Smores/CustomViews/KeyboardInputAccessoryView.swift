@@ -99,6 +99,10 @@ class KeyboardInputAccessoryView: UIView {
         delegate?.openImagePicker()
     }
     
+    @IBAction func lightningButtonTapped(_ sender: UIButton) {
+        
+    }
+    
     // MARK: - Public functions
     func showKeyboard() {
         setupKeyboardNotification()
