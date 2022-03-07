@@ -101,7 +101,7 @@
                             </connections>
                         </button>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="vHQ-YU-q6a">
-                            <rect key="frame" x="20" y="231" width="344" height="2"/>
+                            <rect key="frame" x="15" y="231" width="349" height="2"/>
                             <constraints>
                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="2" id="jyQ-N6-OJs" userLabel="CollectionViewHeightConstraint"/>
                             </constraints>
@@ -109,7 +109,7 @@
                                 <size key="itemSize" width="128" height="128"/>
                                 <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                 <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="sectionInset" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </collectionViewFlowLayout>
                         </collectionView>
                     </subviews>
@@ -125,7 +125,7 @@
                         <constraint firstItem="GhB-E7-y0w" firstAttribute="leading" secondItem="uEa-OT-Q1l" secondAttribute="trailing" constant="8" id="jky-Sk-Xa7"/>
                         <constraint firstItem="uEa-OT-Q1l" firstAttribute="leading" secondItem="gHT-UY-eQy" secondAttribute="leading" constant="15" id="mPp-J5-PxR"/>
                         <constraint firstItem="wWU-ry-Ix1" firstAttribute="top" secondItem="uEa-OT-Q1l" secondAttribute="top" constant="10" id="nkh-Ou-qXJ"/>
-                        <constraint firstItem="vHQ-YU-q6a" firstAttribute="leading" secondItem="gHT-UY-eQy" secondAttribute="leading" constant="20" id="pgq-YH-SPZ"/>
+                        <constraint firstItem="vHQ-YU-q6a" firstAttribute="leading" secondItem="uEa-OT-Q1l" secondAttribute="leading" id="pgq-YH-SPZ"/>
                         <constraint firstItem="wWU-ry-Ix1" firstAttribute="leading" secondItem="uEa-OT-Q1l" secondAttribute="leading" constant="15" id="tsP-aG-RY4"/>
                         <constraint firstItem="wWU-ry-Ix1" firstAttribute="trailing" secondItem="uEa-OT-Q1l" secondAttribute="trailing" id="xjp-bf-sFz"/>
                         <constraint firstItem="yob-Xq-oSR" firstAttribute="top" secondItem="5sM-YN-ueV" secondAttribute="bottom" id="xt9-Fr-UlJ"/>

@@ -38,6 +38,11 @@ class KeyboardInputAccessoryView: UIView {
     private var inputMessageTextViewHeight: CGFloat = 0
     var didSelectImages = false {
         didSet {
+            if didSelectImages {
+                imagesCollectionView.backgroundColor = .white
+            } else {
+                imagesCollectionView.backgroundColor = .clear
+            }
             imagesCollectionView.reloadData()
         }
     }
@@ -91,8 +96,13 @@ class KeyboardInputAccessoryView: UIView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        self.inputTextView.cornerRadius(usingCorners: [.topLeft, .topRight, .bottomLeft], cornerRadii: CGSize(width: 26, height: 26))
-        self.sendButton.cornerRadius(usingCorners: [.topLeft, .topLeft, .bottomRight], cornerRadii: CGSize(width: 26, height: 26))
+        if didSelectImages {
+            self.inputTextView.cornerRadius(usingCorners: [.topLeft, .topRight], cornerRadii: CGSize(width: 26, height: 26))
+            self.imagesCollectionView.cornerRadius(usingCorners: [.bottomLeft], cornerRadii: CGSize(width: 26, height: 26))
+        } else {
+            self.inputTextView.cornerRadius(usingCorners: [.topLeft, .topRight, .bottomLeft], cornerRadii: CGSize(width: 26, height: 26))
+        }
+        
         self.sendButton.cornerRadius(usingCorners: [.topLeft, .topRight, .bottomRight], cornerRadii: CGSize(width: 26, height: 26))
     }
     
