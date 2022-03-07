@@ -30,6 +30,7 @@ class KeyboardInputAccessoryView: UIView {
     @IBOutlet weak var inputHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var collectionViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var imagesCollectionView: UICollectionView!
+    @IBOutlet weak var LightningCollectionViewHeightConstraint: NSLayoutConstraint!
     
     private weak var delegate: KeyboardInputAccessoryViewProtocol?
     private weak var hostViewController: KeyboardInputAccessoryViewProtocol?
@@ -38,6 +39,11 @@ class KeyboardInputAccessoryView: UIView {
     var didSelectImages = false {
         didSet {
             imagesCollectionView.reloadData()
+        }
+    }
+    var showLightningView = false {
+        didSet {
+//            LightningCollectionView.reloadData()
         }
     }
     
@@ -64,6 +70,7 @@ class KeyboardInputAccessoryView: UIView {
                                 textView: inputTextView)
         self.inputHeightConstraint.constant = size.height
         self.collectionViewHeightConstraint.constant = self.didSelectImages ? 80 : 0
+//        self.LightningCollectionViewHeightConstraint.constant = self.showLightningView ? 120 : 0
         return CGSize(width: size.width, height: size.height + 50 + (self.didSelectImages ? 80 : 0))
     }
     
@@ -100,7 +107,8 @@ class KeyboardInputAccessoryView: UIView {
     }
     
     @IBAction func lightningButtonTapped(_ sender: UIButton) {
-        
+        print("Lightning")
+        self.showLightningView = true
     }
     
     // MARK: - Public functions
