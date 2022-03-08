@@ -29,6 +29,14 @@
 		1A5A281C27D515BA00BE32AD /* KeyboardInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A5A281B27D515BA00BE32AD /* KeyboardInputAccessoryView.xib */; };
 		1A5A281E27D5163F00BE32AD /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5A281D27D5163F00BE32AD /* UIView+Ext.swift */; };
 		1A6A843F27D6A76B006A7CA8 /* LightningCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A843E27D6A76B006A7CA8 /* LightningCollectionViewCell.swift */; };
+		1A6A844827D6FFCF006A7CA8 /* LocalModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A844727D6FFCF006A7CA8 /* LocalModels.swift */; };
+		1A6A844A27D705A6006A7CA8 /* DiskStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A844927D705A6006A7CA8 /* DiskStorage.swift */; };
+		1A6A844C27D70763006A7CA8 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A844B27D70763006A7CA8 /* String+Ext.swift */; };
+		1A6A844E27D70777006A7CA8 /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A844D27D70777006A7CA8 /* UIImage+Ext.swift */; };
+		1A6A845027D707A2006A7CA8 /* PeresistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A844F27D707A2006A7CA8 /* PeresistenceManager.swift */; };
+		1A6A845227D70F4E006A7CA8 /* MinimumAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A845127D70F4E006A7CA8 /* MinimumAlertViewController.swift */; };
+		1A6A845427D70F88006A7CA8 /* UIViewContrller+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A845327D70F88006A7CA8 /* UIViewContrller+Ext.swift */; };
+		1A6A845627D7112D006A7CA8 /* CustomTapGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A845527D7112D006A7CA8 /* CustomTapGesture.swift */; };
 		38C5F5C9CB0788BA883B2B8D /* Pods_Smores_SmoresUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B168BFF5C55314D280F85FF2 /* Pods_Smores_SmoresUITests.framework */; };
 		BF88290EF309466019078C90 /* Pods_Smores.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1782D0AE73BA776D07CC902 /* Pods_Smores.framework */; };
 		F23EABE828033E6097DD6D23 /* Pods_SmoresTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A68453F0856C72B591AC13F5 /* Pods_SmoresTests.framework */; };
@@ -78,6 +86,14 @@
 		1A5A281B27D515BA00BE32AD /* KeyboardInputAccessoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyboardInputAccessoryView.xib; sourceTree = "<group>"; };
 		1A5A281D27D5163F00BE32AD /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		1A6A843E27D6A76B006A7CA8 /* LightningCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningCollectionViewCell.swift; sourceTree = "<group>"; };
+		1A6A844727D6FFCF006A7CA8 /* LocalModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalModels.swift; sourceTree = "<group>"; };
+		1A6A844927D705A6006A7CA8 /* DiskStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskStorage.swift; sourceTree = "<group>"; };
+		1A6A844B27D70763006A7CA8 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		1A6A844D27D70777006A7CA8 /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
+		1A6A844F27D707A2006A7CA8 /* PeresistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeresistenceManager.swift; sourceTree = "<group>"; };
+		1A6A845127D70F4E006A7CA8 /* MinimumAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumAlertViewController.swift; sourceTree = "<group>"; };
+		1A6A845327D70F88006A7CA8 /* UIViewContrller+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewContrller+Ext.swift"; sourceTree = "<group>"; };
+		1A6A845527D7112D006A7CA8 /* CustomTapGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTapGesture.swift; sourceTree = "<group>"; };
 		53071C34011B4772077E28FE /* Pods-SmoresTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoresTests.debug.xcconfig"; path = "Target Support Files/Pods-SmoresTests/Pods-SmoresTests.debug.xcconfig"; sourceTree = "<group>"; };
 		57C790CC3BBA5194A23F0BFD /* Pods-SmoresTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoresTests.release.xcconfig"; path = "Target Support Files/Pods-SmoresTests/Pods-SmoresTests.release.xcconfig"; sourceTree = "<group>"; };
 		A1782D0AE73BA776D07CC902 /* Pods_Smores.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smores.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				1A5A281027D5150200BE32AD /* ErrorMessages.swift */,
+				1A6A845527D7112D006A7CA8 /* CustomTapGesture.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -197,6 +214,8 @@
 			isa = PBXGroup;
 			children = (
 				1A5A281327D5151900BE32AD /* ImageResponse.swift */,
+				1A6A844727D6FFCF006A7CA8 /* LocalModels.swift */,
+				1A6A844927D705A6006A7CA8 /* DiskStorage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -215,6 +234,7 @@
 			children = (
 				1A5A27C827D5129D00BE32AD /* ViewController.swift */,
 				1A5A27F627D513B700BE32AD /* ChatViewController.swift */,
+				1A6A845127D70F4E006A7CA8 /* MinimumAlertViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -223,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				1A5A27F427D5139B00BE32AD /* NetworkManager.swift */,
+				1A6A844F27D707A2006A7CA8 /* PeresistenceManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -243,6 +264,9 @@
 			isa = PBXGroup;
 			children = (
 				1A5A281D27D5163F00BE32AD /* UIView+Ext.swift */,
+				1A6A844B27D70763006A7CA8 /* String+Ext.swift */,
+				1A6A844D27D70777006A7CA8 /* UIImage+Ext.swift */,
+				1A6A845327D70F88006A7CA8 /* UIViewContrller+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -510,17 +534,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A6A845627D7112D006A7CA8 /* CustomTapGesture.swift in Sources */,
+				1A6A844C27D70763006A7CA8 /* String+Ext.swift in Sources */,
 				1A5A27F527D5139B00BE32AD /* NetworkManager.swift in Sources */,
 				1A5A280C27D514C700BE32AD /* Size.swift in Sources */,
 				1A5A281427D5151900BE32AD /* ImageResponse.swift in Sources */,
 				1A5A27C927D5129D00BE32AD /* ViewController.swift in Sources */,
+				1A6A845027D707A2006A7CA8 /* PeresistenceManager.swift in Sources */,
+				1A6A844A27D705A6006A7CA8 /* DiskStorage.swift in Sources */,
 				1A5A281E27D5163F00BE32AD /* UIView+Ext.swift in Sources */,
 				1A5A27C527D5129D00BE32AD /* AppDelegate.swift in Sources */,
+				1A6A844E27D70777006A7CA8 /* UIImage+Ext.swift in Sources */,
 				1A6A843F27D6A76B006A7CA8 /* LightningCollectionViewCell.swift in Sources */,
 				1A5A27F727D513B700BE32AD /* ChatViewController.swift in Sources */,
 				1A5A281627D5153D00BE32AD /* ThumbnailCollectionViewCell.swift in Sources */,
 				1A5A281827D5155F00BE32AD /* ImagePickerController.swift in Sources */,
+				1A6A845427D70F88006A7CA8 /* UIViewContrller+Ext.swift in Sources */,
 				1A5A281127D5150200BE32AD /* ErrorMessages.swift in Sources */,
+				1A6A845227D70F4E006A7CA8 /* MinimumAlertViewController.swift in Sources */,
+				1A6A844827D6FFCF006A7CA8 /* LocalModels.swift in Sources */,
 				1A5A280E27D514D000BE32AD /* Colors.swift in Sources */,
 				1A5A27C727D5129D00BE32AD /* SceneDelegate.swift in Sources */,
 				1A5A281A27D5157A00BE32AD /* KeyboardInputAccessoryView.swift in Sources */,

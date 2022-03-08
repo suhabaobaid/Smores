@@ -8,7 +8,7 @@
 import UIKit
 import MessageKit
 
-struct Sender: SenderType {
+struct Sender: SenderType, Codable {
     var senderId: String
     var displayName: String
 }
@@ -30,12 +30,10 @@ struct Media: MediaItem {
 class ChatViewController: MessagesViewController, MessagesDataSource, MessagesLayoutDelegate, MessagesDisplayDelegate {
     
     let currentUser = Sender(senderId: "1", displayName: "Suha")
-    var newMessages: [MessageType] = []
     var messages: [MessageType] = []
     
-    init(newMessages: [MessageType]) {
+    init() {
         super.init(nibName: nil, bundle: nil)
-        self.messages = newMessages
     }
     
     required init?(coder: NSCoder) {
@@ -52,7 +50,29 @@ class ChatViewController: MessagesViewController, MessagesDataSource, MessagesLa
     }
     
     func fetchAllMessages() {
-        
+        PersistenceManager.shared.retrieveMessage { [weak self] result in
+            switch result {
+                case .failure(let error):
+                    self?.presentMinimumAlertonMainThread(message: "Unable to fetch messages", isError: true, dismissTime: 3)
+                case .success(let messages):
+                    var newMessages: [Message] = []
+                    for message in messages {
+                        if message.contentType == .text {
+                            newMessages.append(Message(sender: Sender(senderId: message.senderId, displayName: "Suha"), messageId: message.messageId, sentDate: message.sentDate, kind: .text(message.content)))
+                        } else {
+                            if let image = message.content.toImage() {
+                                newMessages.append(Message(sender: Sender(senderId: message.senderId, displayName: "Suha"), messageId: message.messageId, sentDate: message.sentDate, kind: .photo(
+                                    Media(url: nil,
+                                          image: image,
+                                          placeholderImage: UIImage(named: "placeholder")!,
+                                          size: CGSize(width: 200, height: 200)))))
+                            }
+                        }
+                    }
+                    self?.messages = newMessages
+                    self?.messagesCollectionView.reloadData()
+            }
+        }
     }
 
 }

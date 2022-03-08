@@ -87,23 +87,24 @@ class ViewController: UIViewController, KeyboardInputAccessoryViewProtocol {
     
     // MARK: - Keyboard delegate
     func send(data type: String) {
-        var messages: [MessageType] = []
+        var messages: [LocalMessage] = []
         let currentUser = Sender(senderId: "1", displayName: "Suha")
         
         if !type.isEmpty, type != "" {
-            messages.append(Message(sender: currentUser, messageId: UUID().uuidString, sentDate: Date(), kind: .text(type)))
+            messages.append(LocalMessage(senderId: currentUser.senderId, messageId: UUID().uuidString, sentDate: Date.now, contentType: .text, content: type))
         }
         
         for image in images {
-            messages.append(Message(sender: currentUser, messageId: UUID().uuidString, sentDate: Date(), kind: .photo(
-                Media(url: nil,
-                      image: UIImage(data: image)!,
-                      placeholderImage: UIImage(named: "placeholder")!,
-                      size: CGSize(width: 200, height: 200)))))
+            if let stringImage = UIImage(data: image)?.toJpegString(compressionQuality: 1) {
+                messages.append(LocalMessage(senderId: currentUser.senderId, messageId: UUID().uuidString, sentDate: Date.now, contentType: .image, content: stringImage))
+            }
+            
         }
         
         
-        let chatVC = ChatViewController(newMessages: messages)
+        PersistenceManager.shared.save(messages: messages)
+        
+        let chatVC = ChatViewController()
         self.navigationController?.pushViewController(chatVC, animated: true)
     }
     
