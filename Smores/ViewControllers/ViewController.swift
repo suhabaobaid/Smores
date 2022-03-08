@@ -26,10 +26,8 @@ class ViewController: UIViewController, KeyboardInputAccessoryViewProtocol {
     private lazy var keyboardView: KeyboardInputAccessoryView = {
         return KeyboardInputAccessoryView.view(controller: self)
     }()
-    private lazy var imagePicker: ImagePickerController = {
-        var picker = ImagePickerController(presentationController: self, delegate: self)
-        return picker
-    }()
+    private var imagePicker: ImagePickerController?
+    
     private lazy var chatButton: UIButton = {
         var button = UIButton()
         button.layer.cornerRadius = 10
@@ -51,6 +49,7 @@ class ViewController: UIViewController, KeyboardInputAccessoryViewProtocol {
         gradient.frame = view.bounds
         view.layer.addSublayer(gradient)
         configure()
+        imagePicker = ImagePickerController(presentationController: self, delegate: self)
         // Do any additional setup after loading the view.
     }
     
@@ -115,7 +114,8 @@ class ViewController: UIViewController, KeyboardInputAccessoryViewProtocol {
     }
     
     func openImagePicker() {
-        imagePicker.present(from: self.view)
+        imagePicker?.present(from: self.view)
+        keyboardView.dismissKeyboard()
     }
     
     private func addTapRecognizer() {
@@ -129,25 +129,20 @@ class ViewController: UIViewController, KeyboardInputAccessoryViewProtocol {
     }
 }
 
-extension ViewController: ImagePickerDelegate, ImageViewControllerDelegate {
+extension ViewController: ImageViewControllerDelegate {
     
     func didSelect(image: UIImage?) {
+        
         guard let image = image else {
             return
         }
 
         guard let imageData = image.jpegData(compressionQuality: 0.5) else { fatalError("Coudln't convert image") }
         self.images.append(imageData)
-        DispatchQueue.main.async {
-            self.keyboardView.didSelectImages = true
-            self.keyboardView.showKeyboard()
-        }
+        self.keyboardView.didSelectImages = true
+        self.keyboardView.showKeyboard()
         
         
-    }
-    
-    func openPicker() {
-        imagePicker.present(from: self.view)
     }
 }
 

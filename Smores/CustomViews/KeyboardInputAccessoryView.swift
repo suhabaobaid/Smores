@@ -122,9 +122,22 @@ class KeyboardInputAccessoryView: UIView {
         if showLightningView {
             configureShowLightningView()
         } else {
-            view.removeFromSuperview()
-            self.lightningButton.isSelected = false
-            self.imagesButton.isHidden = false
+            UIView.animate(withDuration: 0.4) {
+                self.view.alpha = 0
+                self.lightningButton.isSelected = false
+                
+                
+            }
+            
+            UIView.animate(withDuration: 0.6) {
+                self.imagesButton.isHidden = false
+            }
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+                self.view.removeFromSuperview()
+            }
+            
+            
         }
     }
     
@@ -132,6 +145,8 @@ class KeyboardInputAccessoryView: UIView {
         view.backgroundColor = .white
         view.clipsToBounds = true
         view.translatesAutoresizingMaskIntoConstraints = false
+        view.alpha = 0
+        
         self.addSubview(view)
         
         NSLayoutConstraint.activate([
@@ -147,6 +162,9 @@ class KeyboardInputAccessoryView: UIView {
         
         if view.subviews.isEmpty {
             configureCollectionView()
+        }
+        UIView.animate(withDuration: 0.5) {
+            self.view.alpha = 1
         }
     }
     

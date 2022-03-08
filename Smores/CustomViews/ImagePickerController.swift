@@ -13,9 +13,6 @@ protocol ImageViewControllerDelegate: AnyObject {
     func didSelect(image: UIImage?)
 }
 
-protocol ImagePickerDelegate: AnyObject {
-    func openPicker()
-}
 
 class ImagePickerController: NSObject {
     
